@@ -8,6 +8,9 @@ app.config['MYSQL_PASSWORD'] = 'Sasi@3010'
 app.config['MYSQL_DB'] = 'Marks'
 
 mysql = MySQL(app)
+@app.route('/Welcome)
+def welcome():
+	print("Welcome to this page")
 
 @app.route('/', methods = ['GET', 'POST'])
 def entry():
